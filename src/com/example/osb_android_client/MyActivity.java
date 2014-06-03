@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MyActivity extends Activity {
+
+    public static final String remoteUriPrefix = "http://213.165.184.156";
+    public static final String appStartingPath = "/obp/simple/view";
     /**
      * Called when the activity is first created.
      */
@@ -19,20 +22,24 @@ public class MyActivity extends Activity {
     private void browseSelectedPort(int port) {
         Intent viewIntent = new Intent(
                 "android.intent.action.VIEW",
-                Uri.parse("http://213.5.44.189:"+port+"/obp/simple/view"));
+                Uri.parse(remoteUriPrefix+":"+port+appStartingPath));
         startActivity(viewIntent);
     }
 
-    public void selectRemoteTrimSlice1(View view) {
+    public void selectUtilite1(View view) {
         browseSelectedPort(8082);
     }
 
-    public void selectRemoteTrimSlice2(View view) {
+    public void selectTrimSlice1(View view) {
         browseSelectedPort(8084);
     }
 
-    public void selectRemoteLaptop(View view) {
+    public void selectTrimSlice2(View view) {
         browseSelectedPort(8086);
+    }
+
+    public void selectTrimSlice3(View view) {
+        browseSelectedPort(8088);
     }
 
 }

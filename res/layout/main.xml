@@ -12,17 +12,22 @@
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="remote TrimSlice-1"
-            android:id="@+id/remoteTrimSlice1" android:textSize="20dip" android:onClick="selectRemoteTrimSlice1"/>
+            android:text="utilite_1@marsec-xl"
+            android:id="@+id/utilite1" android:textSize="20dip" android:onClick="selectUtilite1"/>
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="remote TrimSlice-2"
-            android:id="@+id/remoteTrimSlice2" android:textSize="20dip" android:onClick="selectRemoteTrimSlice2"/>
+            android:text="trimslice_1@marsec-xl"
+            android:id="@+id/trimSlice1" android:textSize="20dip" android:onClick="selectTrimSlice1"/>
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="remote Laptop"
-            android:id="@+id/remoteLaptop" android:textSize="20dip" android:onClick="selectRemoteLaptop"/>
+            android:text="trimslice_2@marsec-xl"
+            android:id="@+id/trimSlice2" android:textSize="20dip" android:onClick="selectTrimSlice2"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="trimslice_3@marsec-xl"
+            android:id="@+id/trimSlice3" android:textSize="20dip" android:onClick="selectTrimSlice3"/>
 </LinearLayout>
 
